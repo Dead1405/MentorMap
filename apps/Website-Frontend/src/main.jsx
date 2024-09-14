@@ -23,7 +23,9 @@ import MentorCal from './pages/MentorCal/MentorCall.jsx';
 import Chat from './Chat/index.jsx';
 import BlogDetails from './pages/User/Blogdetails.jsx';
 import StudentStudentCommunity from './pages/User/s2s.jsx';
-import StudentMentorCommunity from './pages/User/s2m.jsx'; import VideoCall from './pages/User/videoCall.jsx';
+import StudentMentorCommunity from './pages/User/s2m.jsx';
+import VideoCall from './pages/VideoCall/VideoCall.jsx';
+import VideoRoom from './pages/VideoCall/VideoRoom.jsx';
 
 const router = createBrowserRouter([
   {
@@ -74,10 +76,6 @@ const router = createBrowserRouter([
   , {
     path: "/mentorlist",
     element: <MentorList />
-  }
-  , {
-    path: "/videocall",
-    element: <VideoCall />
   },
   {
     path: "/mentorcal",
@@ -99,6 +97,14 @@ const router = createBrowserRouter([
     path: "/s2m",
     element: <StudentMentorCommunity />
   },
+  {
+    path:"/uservideocall",
+    element:<VideoCall/>
+  },
+  {
+    path:"/room/:roomId",
+    element:<VideoRoom/>
+  }
 ]);
 
 

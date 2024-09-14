@@ -32,6 +32,14 @@
     "nodemon": "^3.1.4",
     "sharp": "^0.33.4",
     "socket.io": "^4.7.5",
-    "vercel": "^34.2.7"
+    "vercel": "^34.2.7",
+    "@cloudflare/ai": "^1.2.2",
+    "hono": "^4.4.10"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0",
+    "wrangler": "^3.62.0"
   }
 }
